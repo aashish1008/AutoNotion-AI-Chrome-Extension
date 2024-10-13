@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    width: 35rem;
+}
+
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: rgb(56, 56, 152);
+    margin-bottom: 10px;
+}
+
+p.description {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.info {
+    background-color: #e5e5e5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.info p, .info ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.controls {
+    text-align: center;
+}
+
+.btn {
+    background: linear-gradient(90deg, #6a5acd, #4169e1);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #4169e1, #6a5acd);
+    transform: scale(1.05);
+}
+
+.status-message {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #6b705c;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Loading animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.output {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: #4a4e69;
+}
+
+.note-content {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    word-wrap: break-word;
+    min-height: 50px;
+}

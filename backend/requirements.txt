@@ -1,0 +1,12 @@
+youtube_transcript_api
+python-dotenv
+pathlib
+langchain
+langchain_core
+langchain_community
+faiss-cpu
+PyPDF2
+langchain-cohere
+langchain_groq
+flask-cors
+bs4

@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "AutoNotion AI",
+  "version": "1.0",
+  "description": "AI-powered note-taking from YouTube videos and web pages using RAG techniques.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Your AI-Powered Note Taker"
+  },
+  "icons": {
+    "48": "icons/icon_48.png",
+    "16": "icons/icon_16.png"
+  }
+}
+

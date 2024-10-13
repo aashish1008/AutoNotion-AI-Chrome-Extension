@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Note Maker with RAG Extension</title>
+  <link rel="stylesheet" href="frontend/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Note Maker for You</h1>
+    <p class="description">Create automatic notes from YouTube videos and web pages.</p>
+
+    <div class="info">
+      <p>With this tool, you can:</p>
+      <ul>
+        <li>Automatically generate notes from YouTube videos.</li>
+        <li>Create summaries of web pages with one click.</li>
+        <li>Enhance your productivity with quick, AI-powered notes.</li>
+      </ul>
+    </div>
+
+    <div class="controls">
+      <button id="generate-note" class="btn">Generate Note</button>
+      <p id="status-message" class="status-message"></p>
+      <div class="loader" id="loading-indicator" style="display: none;"></div>
+    </div>
+
+    <div class="output">
+      <h3>Your Note:</h3>
+      <div id="ai-suggestion" class="note-content">
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="frontend/js/popup.js"></script>
+</body>
+</html>
