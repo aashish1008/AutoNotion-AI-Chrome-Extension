@@ -18,10 +18,7 @@ AutoNotion AI utilizes a Retrieval-Augmented Generation (RAG) framework, incorpo
         - **Web Page Tool:** Analyzes and summarizes web pages, capturing essential information for easier study or research.
     - These tools are triggered by agents to retrieve the most relevant data from videos or web pages, ensuring efficient note generation.
 
-## Technologies Used
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Python (Flask), LangChain, FAISS, Cohere Embeddings, Groq LLM (LLaMA3)
-- **AI Models:** RAG (Retrieval-Augmented Generation), LLaMA3-8B-8192
+
 
 ## Installation
 - **Clone the repository:**
