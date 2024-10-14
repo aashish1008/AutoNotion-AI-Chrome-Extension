@@ -18,6 +18,31 @@ AutoNotion AI utilizes a Retrieval-Augmented Generation (RAG) framework, incorpo
         - **Web Page Tool:** Analyzes and summarizes web pages, capturing essential information for easier study or research.
     - These tools are triggered by agents to retrieve the most relevant data from videos or web pages, ensuring efficient note generation.
 
+## Technology Used
+**Frontend:**
+
+  - **HTML/CSS:** Provides the structure and styling for the popup interface.
+  - **JavaScript:** Manages user interactions and communicates with the backend API, primarily through `popup.js`.
+  - **Chrome Extensions API:** Utilizes `chrome.tabs` for managing active tabs and `chrome.storage` for local data persistence.
+
+**Backend:**
+
+  - **Python Flask:** Serves as the backend API for handling note generation requests.
+  - **LangChain:** Supports multiple functionalities, including:
+    - **Document Loaders:** For retrieving and processing web content.
+    - **Agents:** Facilitates the creation of agents for automated tasks.
+    - **Tool Creation:** Enables the development of tools for different data sources.
+    - **FAISS:** A vector database for efficient document retrieval.
+    - **Cohere Embeddings:** Embeds content into vectors.
+    - **LLM Models:** Utilizes ChatGroq `(llama3 model)` for generating and structuring notes.
+
+**RAG Techniques:**
+
+- Implements **Retrieval-Augmented Generation (RAG)** methods by combining information retrieval and language generation, enabling the system to generate contextually relevant notes based on web pages and YouTube videos.
+
+**Deployment:**
+
+- The application runs locally on Flask with CORS enabled for cross-origin requests.
 
 
 ## Installation
