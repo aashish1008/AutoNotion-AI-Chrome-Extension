@@ -36,7 +36,7 @@ AutoNotion AI utilizes a Retrieval-Augmented Generation (RAG) framework, incorpo
 ## How to Use
 1. Navigate to any YouTube video or web page.
 2. Click the AutoNotion AI extension icon in your browser toolbar.
-3. Generate AI Note:
+3. Generate Note:
     - For YouTube videos: Retrieve and summarize the video transcript.
     - For web pages: Extract and summarize the page content.
 4. Review the notes directly within the extension, or export them for future use.
