@@ -1,6 +1,8 @@
 # AutoNotion AI: Chrome Extension
 AutoNotion AI is a Chrome extension designed to help you take smart, efficient notes from YouTube videos and web pages using advanced AI techniques like Retrieval-Augmented Generation (RAG) and the LLaMA3 model. With a focus on streamlining study workflows, this extension automates the process of generating structured and actionable notes, making learning more accessible.
 
+https://github.com/user-attachments/assets/e32c359b-092b-4f86-9aab-e83f6c70c5b1
+
 ## Features
 - **Automatic Note Generation:** Create notes from YouTube videos and web pages instantly using AI.
 - **Summarization:** Get key insights and actionable items extracted and organized for quick learning.
