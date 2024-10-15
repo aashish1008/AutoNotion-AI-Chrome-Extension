@@ -30,8 +30,9 @@ CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 
 class NoteSage:
-    def __init__(self, url):
+    def __init__(self, url, inp):
         self.url = url
+        self.inp = inp
         self.youtube_url = ""
         self.web_url = ""
         self.embeddings = CohereEmbeddings(model="embed-english-v3.0")
@@ -126,7 +127,7 @@ class NoteSage:
             ("human", f"""
             Content Type: {'YouTube' if self.youtube_url else 'Web Page'}
             URL: {self.url}
-
+            Create structured and detailed study notes.
             Ensure the notes are organized and clear. Use bullet points for clarity, and consider including headings or subheadings for different sections.
             """),
             MessagesPlaceholder(variable_name="agent_scratchpad"),
@@ -142,7 +143,7 @@ class NoteSage:
         agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=False)
 
         resp = agent_executor.invoke({
-                "input": "create structured and detailed study notes."
+                "input": self.inp
             })
 
 
@@ -156,10 +157,12 @@ def chat():
     try:
         data = request.get_json()
         url = data['url']
-        sage = NoteSage(url)
+        inp = data['question']
+        sage = NoteSage(url, inp)
         response = sage.run()
         return jsonify({
                'url': url,
+               'question' : inp,
                'response': response
         })
     except Exception as e:
