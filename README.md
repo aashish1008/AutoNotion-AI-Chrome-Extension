@@ -50,7 +50,7 @@ AutoNotion AI utilizes a Retrieval-Augmented Generation (RAG) framework, incorpo
 ## Installation
 - **Clone the repository:**
   ``` bash
-  git clone https://github.com/yourusername/AutoNotionAI-Extension.git
+  git clone https://github.com/aashish1008/AutoNotion-AI-Chrome-Extension.git
 - **Load the extension:**
   - Go to the Chrome Extensions page (chrome://extensions/).
   - Enable Developer mode.
